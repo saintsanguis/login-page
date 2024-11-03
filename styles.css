@@ -1,8 +1,26 @@
-/* Set the font family and background color for the entire page */
 body {
-    /* Use Arial as the default font, and sans-serif fonts if Arial is not available */
-    font-family: Arial, sans-serif;
-    /* Set a light gray background color to provide contrast with dark text */
-    background-color: #f2f2f2;
+    background-color: #f0f0f0;
+  }
+  
+  .login-container {
+    max-width: 500px; /* Set a maximum width for responsiveness */
+    margin: auto; /* Center horizontally */
+    padding: 20px; /* Add some space around the content */
+    border: 1px solid #ddd; /* Add a gentle border */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Add a subtle shadow */
+  }
+  
+  .login-container h2 {
+    margin-bottom: 20px; /* Give some space between the title and form */
+  }
+  
+  #login-form {
+    display: flex;
+    flex-direction: column; /* Stack the form fields vertically */
+    align-items: center; /* Center the form horizontally */
+  }
+  
+  #login-form label {
+    margin-bottom: 10px; /* Give some space between the labels and input fields */
   }
   
