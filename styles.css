@@ -1,26 +1,84 @@
+/* Centered layout */
 body {
-    background-color: #f0f0f0;
+    /* Set the font family for a cute and teddy bear-like look */
+    font-family: 'Pacifico', cursive, sans-serif;
+  
+    /* Use a warm cream white background */
+    background-color: #fcf9ec;
   }
   
+  /* Remove default margin from HTML elements */
+  * {
+    margin: 0;
+    padding: 0;
+  }
+  
+  /* Centered container for login form */
   .login-container {
-    max-width: 500px; /* Set a maximum width for responsiveness */
-    margin: auto; /* Center horizontally */
-    padding: 20px; /* Add some space around the content */
-    border: 1px solid #ddd; /* Add a gentle border */
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Add a subtle shadow */
+    /* Maximum width for responsiveness */
+    max-width: 500px;
+  
+    /* Center the login form horizontally and vertically */
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  
+    /* Add some padding to give it breathing room */
+    padding: 20px;
+  
+    /* Set the background color for a soft and cuddly feel */
+    background-color: #f7d2c4;
   }
   
-  .login-container h2 {
-    margin-bottom: 20px; /* Give some space between the title and form */
+  /* Input field styles (text and password) */
+  input[type="text"], input[type="password"] {
+    /* Make the fields small and round */
+    width: calc(100% - 20px);
+    height: 30px;
+  
+    /* Add some padding for breathing room */
+    padding: 10px;
+  
+    /* Use a soft and cuddly color scheme */
+    background-color: #f7d2c4;
   }
   
-  #login-form {
-    display: flex;
-    flex-direction: column; /* Stack the form fields vertically */
-    align-items: center; /* Center the form horizontally */
+  input[type="text"] {
+    margin-bottom: 15px;
   }
   
-  #login-form label {
-    margin-bottom: 10px; /* Give some space between the labels and input fields */
+  /* Button styles */
+  button[type="submit"] {
+    /* Make the button small and round */
+    width: calc(100% - 20px);
+    height: 30px;
+  
+    /* Add some padding for breathing room */
+    padding: 10px;
+  
+    /* Use a soft and cuddly color scheme */
+    background-color: #f7d2c4;
+    
+    /* Make the text white */
+    color: #fff;
+  }
+  
+  button[type="submit"]:hover {
+    background-color: #FFD2AE;
+  }
+  
+  /* Form spacing */
+  form {
+    margin-bottom: 20px;
+  }
+  
+  /* Label styles */
+  label {
+    display: block;
+    font-size: 16px;
+    color: #333;
+    text-align: center;
+    margin-bottom: 10px;
   }
   

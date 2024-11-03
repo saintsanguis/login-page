@@ -3,27 +3,61 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Login Page</title>
+  <title>Login Form</title>
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+
+  <!-- Login container styles -->
   <div class="login-container">
-    <h2>Login Form</h2>
-    <form id="login-form">
-      <label for="username">Username:</label>
-      <input type="text" id="username" name="username"><br><br>
-      <label for="password">Password:</label>
-      <input type="password" id="password" name="password"><br><br>
-      <button type="submit">Login</button>
-    </form>
+    <div class="form">
+      <label class="label">Username:</label>
+      <input type="text" placeholder="Enter your username">
+      <br>
+      <label class="label">Password:</label>
+      <input type="password" placeholder="Enter your password">
+      <div class="button-container">
+        <button type="submit">Login</button>
+        <button type="cancel">Cancel</button>
+      </div>
+    </div>
   </div>
-
-  <div class="download-container">
-    <h2>Don't have an account? Download our app!</h2>
-    <a href="#" class="android-link">Download for Android</a>
-    <a href="#" class="ios-link">Download for iOS</a>
+  
+  <div class="download-section">
+    <h2 class="download-header">Download Now!</h2>
+    <div class="download-button-container">
+      <button type="submit" id="ios-button">Get it on iOS</button>
+      <button type="submit" id="android-button">Get it on Android</button>
+    </div>
   </div>
+  
+  
+  
 
-  <script src="index.js"></script>
+  <!-- Body styles -->
+  <style>
+    /* Center the container horizontally */
+    .login-container {
+      max-width: 500px;
+      margin: auto;
+    }
+    
+    /* Center the login form vertically and horizontally */
+    #login-form {
+      position: relative;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
+    
+    /* Push the download info down to center of page */
+    .download-info {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-top: 20px;
+    }
+  </style>
+
 </body>
 </html>
