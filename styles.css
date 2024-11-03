@@ -1,0 +1,8 @@
+/* Set the font family and background color for the entire page */
+body {
+    /* Use Arial as the default font, and sans-serif fonts if Arial is not available */
+    font-family: Arial, sans-serif;
+    /* Set a light gray background color to provide contrast with dark text */
+    background-color: #f2f2f2;
+  }
+  
